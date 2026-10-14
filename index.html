@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turbo Racer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <header>
+      <h1>🏎️ TURBO RACER</h1>
+      <p>Desvie dos carros e faça a maior pontuação!</p>
+    </header>
+
+    <section class="hud">
+      <div>PONTOS<strong id="score">0</strong></div>
+      <div>VELOCIDADE<strong id="speed">1</strong></div>
+      <div>RECORDE<strong id="record">0</strong></div>
+    </section>
+
+    <section class="road" id="road">
+      <div class="lane lane1"></div>
+      <div class="lane lane2"></div>
+      <div class="lane lane3"></div>
+
+      <div class="overlay" id="overlay">
+        <h2 id="message">PRONTO PARA CORRER?</h2>
+        <p id="description">Desvie dos carros e sobreviva!</p>
+        <button id="startButton">▶ INICIAR CORRIDA</button>
+      </div>
+
+      <div class="player car" id="player">
+        <span>🏎️</span>
+      </div>
+    </section>
+
+    <section class="controls">
+      <button id="leftButton" aria-label="Mover para esquerda">⬅️</button>
+      <button id="rightButton" aria-label="Mover para direita">➡️</button>
+    </section>
+
+    <p class="instructions">
+      Use as setas ← → ou A e D para dirigir.
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
